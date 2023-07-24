@@ -27,20 +27,20 @@
 <body>
   <header>
     <div class="main-header">
-      <div class="top-content">
-        <div class="top-box">
+      <div class="main-header__content">
+        <div class="main-header__top-box">
           <h1>ABLY</h1>
         </div>
         <span>앱에서 더 많은 상품을 볼 수 있어요!</span>
-        <div class="top-box">
+        <div class="main-header__top-box">
           <h2>앱에서 보기</h2>
         </div>
       </div>
-      <div class="top-search">
-        <div class="top-input">
+      <div class="main-header__search">
+        <div class="main-header__input">
           <div class="material-icons">search</div>
           <span>하나만 사도 무료배송</span>
-          <input type="text">
+          <input class="main-header__input--product" type="text">
         </div>
         <div class="material-icons">
           shopping_cart_checkout
@@ -116,7 +116,7 @@
       </div>
     </div>
     <div class="category">
-      <div class="first-category">
+      <div class="category__first">
         <div>
           <img src="https://img.a-bly.com/shortcut/shortcut_image_1680844531505473.png" alt="">
           <p>LADY</p>
@@ -162,7 +162,7 @@
           <p>푸드</p>
         </div>
       </div>
-      <div class="second-category">
+      <div class="category__second">
         <div>
           <img src="https://img.a-bly.com/shortcut/shortcut_image_1676511639199031.png" alt="">
           <p>MEN</p>
@@ -206,74 +206,74 @@
       </div>
     </div>
     <div class="product">
-      <div class="product-title">
+      <div class="product__title">
         <h1>회원님을 위한 추천 상품</h1>
         <span>sponsored</span>
       </div>
-      <div class="push-product">
+      <div class="product__push">
         <div class="item">
           <img src="https://d3ha2047wt6x28.cloudfront.net/6NqYF3-wo44/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzIxOTA5YTZjOTNmN2JhM2JiMzM4YWU4NzFjNjNjYmNmLmdpZg" alt="">
           <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">   
-          <div>
+          <div class="price-information">
             <span class="sale">17%</span>
-            <span class="handwriting">9,900</span>
+            <span class="sale-price">9,900</span>
           </div>
-          <p>미오</p>
-          <p class="information">Ice maxim wide pt! 4col</p>
+          <p class="product__seller">미오</p>
+          <p class="product__name">Ice maxim wide pt! 4col</p>
         </div>
         <div class="item">
           <img src="https://d3ha2047wt6x28.cloudfront.net/-Mw_G2xXt3Q/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzU3MTBjN2Y4OTYzZjY1Mjk3YzgxM2Y0MDAxMWQ2OTIyLmdpZg" alt="">
           <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">
-          <span class="handwriting">25,500</span>
-          <p>앤드모어</p>
-          <p class="information">[쿨링소재,얇아요!/기장선택,2XL까지] 색감맛집, 썸머 하이웨스트 워싱 와이드 데님팬츠 (4color)</p>
+          <span class="price">25,500</span>
+          <p class="product__seller">앤드모어</p>
+          <p class="product__name">[쿨링소재,얇아요!/기장선택,2XL까지] 색감맛집, 썸머 하이웨스트 워싱 와이드 데님팬츠 (4color)</p>
         </div>
         <div class="item">
           <img src="https://d3ha2047wt6x28.cloudfront.net/DG3MPZAK-uA/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2FlOGU2MzdjMDllYmQ1MTA4YmUyYjEyNzk1YjZlM2JmLmpwZw" alt="">
           <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">
-          <span class="handwriting">14,500</span>
-          <p>뮤어린</p>
-          <p class="information">[핏보장!/허리잘록~] 쫀득 모찌 옆셔링 크롭 반팔 티셔츠</p>
+          <span class="price">14,500</span>
+          <p class="product__seller">뮤어린</p>
+          <p class="product__name">[핏보장!/허리잘록~] 쫀득 모찌 옆셔링 크롭 반팔 티셔츠</p>
         </div>
       </div>
-      <div class="product-list">
-        <div class="product-lists">
+      <div class="product__list">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/59kdH9scGyA/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzA4OWM1MWNhNjhmOGI1MzQ2MTFiYWRhNDRhMTJmYTZiLmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">20%</span>
-                <span class="handwriting">7,900</span>
+                <span class="sale-price">7,900</span>
               </div>
-              <p>니까</p>
-              <p class="information">[당일/공용/주문폭주] 모찌 하이웨스트 트레이닝 숏팬츠 (2color)</p>
+              <p class="product__seller">니까</p>
+              <p class="product__name">[당일/공용/주문폭주] 모찌 하이웨스트 트레이닝 숏팬츠 (2color)</p>
               <p>6,776개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/83xoU9A9An0/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzM5YWRmZmFjZTMxNzM2Y2FmNTgxYWQ4NTU4MDE1MGYwLmdpZg" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">6%</span>
-                <span class="handwriting">14,900</span>
+                <span class="sale-price">14,900</span>
               </div>
-              <p>무드라벨</p>
-              <p class="information">[카고! / 나일론] 얇고 편해요. 나일론 루즈핏 스포티 카고 트레이닝 팬츠</p>
+              <p class="product__seller">무드라벨</p>
+              <p class="product__name">[카고! / 나일론] 얇고 편해요. 나일론 루즈핏 스포티 카고 트레이닝 팬츠</p>
               <p>2,250개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2RVO18vNaTk/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2Y0NDcxOGY4ZTBkOGIwMmE5MjA4YjJhZTgzYjRiM2QwLmdpZg" alt="">
-              <div>
+              <div class="price-information">
                 <span class="sale">25%</span>
-                <span class="handwriting">8,910</span>
+                <span class="sale-price">8,910</span>
               </div>
-              <p>통통</p>
-              <p class="information">[빅사이즈] 살탐방지! 썸머 시스루 박시 반팔 오버핏 티셔츠(4color)</p>
+              <p class="product__seller">통통</p>
+              <p class="product__name">[빅사이즈] 살탐방지! 썸머 시스루 박시 반팔 오버핏 티셔츠(4color)</p>
               <p>3,653개 구매중</p>
             </div>
           </div>
@@ -281,27 +281,27 @@
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/eRT5N697QJg/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzFlMDczMzY5NDgyZTFiNWRlNzVlOWM2M2UwYWQ0Mzk5LmdpZg" alt=""> 
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">     
-              <div>
+              <div class="price-information">
                 <span class="sale">37%</span>
-                <span class="handwriting">9,800</span>
+                <span class="sale-price">9,800</span>
               </div>
-              <p>아준홀릭</p>
-              <p class="information">[ y2k 반팔 티셔츠 30종 모음전 ] 힙 스트릿 뉴진스</p>
+              <p class="product__seller">아준홀릭</p>
+              <p class="product__name">[ y2k 반팔 티셔츠 30종 모음전 ] 힙 스트릿 뉴진스</p>
               <p>1,926개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/OtpgMSPyU8o/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2IyYjFkZWY0MDM3YzgxZmNlMjFjMTc3NjMwMDFkZTRhLmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">70%</span>
-                <span class="handwriting">14,900</span>
+                <span class="sale-price">14,900</span>
               </div>
-              <p>와이츄</p>
-              <p class="information">[1회2천원대⚡] NEW 노글루 속눈썹펌 키트 세트</p>
+              <p class="product__seller">와이츄</p>
+              <p class="product__name">[1회2천원대⚡] NEW 노글루 속눈썹펌 키트 세트</p>
               <p>1,415개 구매중</p>
             </div>
           </div>
@@ -309,80 +309,80 @@
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/klJL6WxM2_Y/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzI0ZGMxYjQzMzliMDViZWI1YzI3ZWFjYzMyODU0MWE5LmpwZw" alt=""> 
               <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">     
-              <div>
+              <div class="price-information">
                 <span class="sale">17%</span>
-                <span class="handwriting">9,900</span>
+                <span class="sale-price">9,900</span>
               </div>
-              <p>이거든</p>
-              <p class="information">[ 기본필수, 정말부드러워요 ] 찰랑! 데일리 반팔티 / 차르르~ 레이온 치즈스판 루즈핏 티셔츠 / 부드러운 기본 무지 라운드넥t</p>
+              <p class="product__seller">이거든</p>
+              <p class="product__name">[ 기본필수, 정말부드러워요 ] 찰랑! 데일리 반팔티 / 차르르~ 레이온 치즈스판 루즈핏 티셔츠 / 부드러운 기본 무지 라운드넥t</p>
               <p>13,008개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/Ow7eE9l44CQ/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2ZkMmViMTk2ZWJkZTQxNzIzYmMxZDI4YzNiOWUxYmM2LmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">17%</span>
-                <span class="handwriting">19,500</span>
+                <span class="sale-price">19,500</span>
               </div>
-              <p>제이닝</p>
-              <p class="information">✨여름ver추가✨[140cm~/1+1할인/와이드+조거/기장선택] 제이닝 하이웨스트 스트링 밴딩 카고 팬츠 140/150/160 키작녀추천 데일리 교복바지 당일</p>
+              <p class="product__seller">제이닝</p>
+              <p class="product__name">✨여름ver추가✨[140cm~/1+1할인/와이드+조거/기장선택] 제이닝 하이웨스트 스트링 밴딩 카고 팬츠 140/150/160 키작녀추천 데일리 교복바지 당일</p>
               <p>74,602개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/JNd9AwPopvU/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2JmZTM3NjliMGYzYzkzZGU5ZmExNTU1MjA0ZmNmYTUyLmdpZg" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">7%</span>
-                <span class="handwriting">23,150</span>
+                <span class="sale-price">23,150</span>
               </div>
-              <p>윈더윈더</p>
-              <p class="information">퍼즐 박시 데님 반팔 남방 셔츠</p>
+              <p class="product__seller">윈더윈더</p>
+              <p class="product__name">퍼즐 박시 데님 반팔 남방 셔츠</p>
               <p>3,216개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/90Y7TDHkNc4/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzU1ZThmMjJkZDEwNDVkNWI2MzlhNzRlYjZjYTg2ZDYyLmpwZw" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">50%</span>
-                <span class="handwriting">11,000</span>
+                <span class="sale-price">11,000</span>
               </div>
-              <p>페리페라</p>
-              <p class="information">[1+1/클리어런스] 잉크 무드 글로이 틴트 (9호,10,11호)</p>
+              <p class="product__seller">페리페라</p>
+              <p class="product__name">[1+1/클리어런스] 잉크 무드 글로이 틴트 (9호,10,11호)</p>
               <p>7,816개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2KdAVBGWu2U/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2ZlMTQ2OWUxZTU5MzA5MmRkZDg1MTIxM2I1NzQ0NTA5LmdpZg" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">17%</span>
-                <span class="handwriting">19,800</span>
+                <span class="sale-price">19,800</span>
               </div>
-              <p>뮤즈핏</p>
-              <p class="information">[숏,일반,롱][여름&카키추가] *와이드&조거*투웨이* 기장수선NO! 투웨이 와이드 카고 팬츠 3COLOR</p>
+              <p class="product__seller">뮤즈핏</p>
+              <p class="product__name">[숏,일반,롱][여름&카키추가] *와이드&조거*투웨이* 기장수선NO! 투웨이 와이드 카고 팬츠 3COLOR</p>
               <p>51,496개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/-Oy7T8cwPjg/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2QzMzhmZDk4NTdlNDE4NGUzNTdhMGRiYTA1NTZhMjZiLmdpZg" alt="">  
-              <div>
+              <div class="price-information">
                 <span class="sale">22%</span>
-                <span class="handwriting">20,700</span>
+                <span class="sale-price">20,700</span>
               </div>
-              <p>부기샵</p>
-              <p class="information">빠른출고/여름까지~[#자체제작/인생데님] 어웨이 레트로 워싱 하이웨스트 데님 팬츠</p>
+              <p class="product__seller">부기샵</p>
+              <p class="product__name">빠른출고/여름까지~[#자체제작/인생데님] 어웨이 레트로 워싱 하이웨스트 데님 팬츠</p>
               <p>14,600개 구매중</p>
             </div>
           </div>
@@ -390,53 +390,53 @@
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/83xoU9A9An0/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzM5YWRmZmFjZTMxNzM2Y2FmNTgxYWQ4NTU4MDE1MGYwLmdpZg" alt=""> 
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">     
-              <div>
+              <div class="price-information">
                 <span class="sale">75%</span>
-                <span class="handwriting">5,900</span>
+                <span class="sale-price">5,900</span>
               </div>
-              <p>케이시</p>
-              <p class="information">전기종🔥빠른배송 갤럭시 파워 걸 그립 톡홀더 아이폰케이스 핸드폰케이스 폰케이스  아이폰13 아이폰14 프로 미니 맥스 울트라 플러스 S21 S22 S23 친구 생일 선물 우정</p>
+              <p class="product__seller">케이시</p>
+              <p class="product__name">전기종🔥빠른배송 갤럭시 파워 걸 그립 톡홀더 아이폰케이스 핸드폰케이스 폰케이스  아이폰13 아이폰14 프로 미니 맥스 울트라 플러스 S21 S22 S23 친구 생일 선물 우정</p>
               <p>1,375개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/Rg9hMeyN8z4/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzg0ZDA1MzJhMDE1NDE4OTg0MzExYWJlMmM0YTdjN2E1LmdpZg" alt=""> 
-              <div>
+              <div class="price-information">
                 <span class="sale">22%</span>
-                <span class="handwriting">16,500</span>
+                <span class="sale-price">16,500</span>
               </div>
-              <p>통통</p>
-              <p class="information">~3XL 시스루 부클 브이넥 데일리 가디건 3color  [통통제작]</p>
+              <p class="product__seller">통통</p>
+              <p class="product__name">~3XL 시스루 부클 브이넥 데일리 가디건 3color  [통통제작]</p>
               <p>360개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/LFy-7vlYemo/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzgyMThmNmJlYjAwM2FjMjFkOTc1NTUyNDRmYjIzMWZiLmdpZg" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">17%</span>
-                <span class="handwriting">18,900</span>
+                <span class="sale-price">18,900</span>
               </div>
-              <p>조이조이</p>
-              <p class="information">[💥1+1할인💥/최저가] 아이스 바스락 카고 포켓 와이드+조거 2way나일론 썸머 팬츠 여름 바지</p>
+              <p class="product__seller">조이조이</p>
+              <p class="product__name">[💥1+1할인💥/최저가] 아이스 바스락 카고 포켓 와이드+조거 2way나일론 썸머 팬츠 여름 바지</p>
               <p>30,102개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/N2N46TAymrg/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzIwMjIwNzA4XzE2NTcyMDcwODg0NTI1NzRzLmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">30%</span>
-                <span class="handwriting">3,500</span>
+                <span class="sale-price">3,500</span>
               </div>
-              <p>아가더</p>
-              <p class="information">[인기급상승!!] 🍉여름 왔다!!🍉 아가더 타투스티커</p>
+              <p class="product__seller">아가더</p>
+              <p class="product__name">[인기급상승!!] 🍉여름 왔다!!🍉 아가더 타투스티커</p>
               <p>12,243개 구매중</p>
             </div>
           </div>
@@ -444,26 +444,26 @@
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/LUD54ux7Xj8/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzNlODIxZTY0YzBlNDg5ZWY2MTY0YTVmMDRlMDUwNTA0LmdpZg" alt="">  
               <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">    
-              <div>
-                <span class="handwriting">14,500</span>
+              <div class="price-information">
+                <span class="price">14,500</span>
               </div>
-              <p>앤드모어</p>
-              <p class="information">[옆셔링!/남심저격] 몸매 예뻐보이는, 또또 셔링 포켓 크롭 반팔티셔츠 (6color)</p>
+              <p class="product__seller">앤드모어</p>
+              <p class="product__name">[옆셔링!/남심저격] 몸매 예뻐보이는, 또또 셔링 포켓 크롭 반팔티셔츠 (6color)</p>
               <p>51,424개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/7qCAIK5Cr5Y/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzhlMjQyMjg3NGFiYjM1YjExMjY0ODRiMTdhNGI2YWUzLmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">5%</span>
-                <span class="handwriting">17,500</span>
+                <span class="sale-price">17,500</span>
               </div>
-              <p>애원</p>
-              <p class="information">파스텔 베이직 롤업 반팔셔츠 (3color)</p>
+              <p class="product__seller">애원</p>
+              <p class="product__name">파스텔 베이직 롤업 반팔셔츠 (3color)</p>
               <p>9,197개 구매중</p>
             </div>
           </div>
@@ -472,78 +472,78 @@
               <img src="https://d3ha2047wt6x28.cloudfront.net/sljwx-yMfdY/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzI3ZWI4MTZlZmQ5ZDYzODMxZGRjZTYxMGY1ZjAyM2Y0LmdpZg" alt="">   
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
 
-              <div>
+              <div class="price-information">
                 <span class="sale">41%</span>
-                <span class="handwriting">9,900</span>
+                <span class="sale-price">9,900</span>
               </div>
-              <p>루나</p>
-              <p class="information">롱래스팅 팁 컨실러</p>
+              <p class="product__seller">루나</p>
+              <p class="product__name">롱래스팅 팁 컨실러</p>
               <p>81,437개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/mEOlnacuD1M/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzk5MzhlYTQxMTczYzBmYWM3MGIyMzJlN2Q5NWM5YjVlLmdpZg" alt="">
-              <div>
+              <div class="price-information">
                 <span class="sale">48%</span>
-                <span class="handwriting">8,700</span>
+                <span class="sale-price">8,700</span>
               </div>
-              <p>데일리베이지</p>
-              <p class="information">💖10만장EVENT💖 [ 주문폭주 ] *사이즈선택 국내생산  기본반팔1위 기본 흰티 쫀쫀 유넥 크롭 쿨티 라운드 면티 스판 이너 레이어드 여름 반팔 무지 데일리 티셔츠</p>
+              <p class="product__seller">데일리베이지</p>
+              <p class="product__name">💖10만장EVENT💖 [ 주문폭주 ] *사이즈선택 국내생산  기본반팔1위 기본 흰티 쫀쫀 유넥 크롭 쿨티 라운드 면티 스판 이너 레이어드 여름 반팔 무지 데일리 티셔츠</p>
               <p>75,781개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/BGC9TAtnQJw/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzdkOTY4NTI0ZGFkMmQ0ZDY4OTNiOWNhZGMxZTFlZjNlLmdpZg" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">60%</span>
-                <span class="handwriting">14,000</span>
+                <span class="sale-price">14,000</span>
               </div>
-              <p>에스쁘아</p>
-              <p class="information">[1+1] 꾸뛰르 립 틴트 벨벳/퓨어벨벳+ 립 스머지 브러쉬</p>
+              <p class="product__seller">에스쁘아</p>
+              <p class="product__name">[1+1] 꾸뛰르 립 틴트 벨벳/퓨어벨벳+ 립 스머지 브러쉬</p>
               <p>7,705개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/ADN1ecgqX-I/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2I5MjY5ZTJhMTJkY2Q4ZDUxZmU4MjkxZDlmNzk5YTljLmdpZg" alt="">
-              <div>
+              <div class="price-information">
                 <span class="sale">22%</span>
-                <span class="handwriting">17,010</span>
+                <span class="sale-price">17,010</span>
               </div>
-              <p>슈가파우더</p>
-              <p class="information">당일발송｜[원조!*카피조심/일체형~] 독보적인 디테일, 이중 레이어드 크롭 카라 반팔가디건 티셔츠 - 4color</p>
+              <p class="product__seller">슈가파우더</p>
+              <p class="product__name">당일발송｜[원조!*카피조심/일체형~] 독보적인 디테일, 이중 레이어드 크롭 카라 반팔가디건 티셔츠 - 4color</p>
               <p>27,281개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/zjKbLIflQg8/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2MyMDgxZDVkNmFmMTFkNTNhNWUwMjk0MmYzNjBhNjlhLmpwZw" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">70%</span>
-                <span class="handwriting">5,900</span>
+                <span class="sale-price">5,900</span>
               </div>
-              <p>99마일</p>
-              <p class="information">♥신상할인♥[젤리 힙숭이]아이폰케이스 갤럭시 핸드폰 휴대폰 아이폰14 13 12 11 x xs xr 8 7 6 se2 se3 프로 미니 맥스 s23 s22 S21 S20 S10e s9 s8 플러스 울트라 fe 갤럭시노트 노트 20 10 9 8 그립톡 a 10e 23 24 30 31 32 33 34 42 50 51 52s 53 54 82 90 lg벨벳 와이드 4 5 퀀텀 점프 2 3 x커버5</p>
+              <p> class="product_seller_"99마일</p>
+              <p class="product__name">♥신상할인♥[젤리 힙숭이]아이폰케이스 갤럭시 핸드폰 휴대폰 아이폰14 13 12 11 x xs xr 8 7 6 se2 se3 프로 미니 맥스 s23 s22 S21 S20 S10e s9 s8 플러스 울트라 fe 갤럭시노트 노트 20 10 9 8 그립톡 a 10e 23 24 30 31 32 33 34 42 50 51 52s 53 54 82 90 lg벨벳 와이드 4 5 퀀텀 점프 2 3 x커버5</p>
               <p>626개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/nkS0TNxMfr8/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2FhYTAzM2JmZWUyOTNhYWE4M2Q4YWNjOWMyNzI1YTkxLmdpZg" alt="">
-              <div>
+              <div class="price-information">
                 <span class="sale">50%</span>
-                <span class="handwriting">9,900</span>
+                <span class="sale-price">9,900</span>
               </div>
-              <p>더레이디</p>
-              <p class="information">💗당일출고💗말랑말랑 가벼운 쪼리 통굽 슬리퍼 L-12005</p>
+              <p class="product__seller">더레이디</p>
+              <p class="product__name">💗당일출고💗말랑말랑 가벼운 쪼리 통굽 슬리퍼 L-12005</p>
               <p>8,528개 구매중</p>
             </div>
           </div>
@@ -551,53 +551,53 @@
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/vb8jEwNShKU/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2FlMjA5NGI2MDM0NDFhNDYzMWE4M2RlY2E0NjI2NjAzLmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">      
-              <div>
+              <div class="price-information">
                 <span class="sale">46%</span>
-                <span class="handwriting">6,900</span>
+                <span class="sale-price">6,900</span>
               </div>
-              <p>나인틴프라이데이</p>
-              <p class="information">강아지 선글라스 공룡 커플 케이스 젤리 투명 폰케이스 귀여운 인형 케이스 그립톡 스마트톡 아이폰 갤럭시 갤럭시S23 아이폰14 Z플립3 Z플립4 손민수 키치 힙한 우정 생일 선물</p>
+              <p class="product__seller">나인틴프라이데이</p>
+              <p class="product__name">강아지 선글라스 공룡 커플 케이스 젤리 투명 폰케이스 귀여운 인형 케이스 그립톡 스마트톡 아이폰 갤럭시 갤럭시S23 아이폰14 Z플립3 Z플립4 손민수 키치 힙한 우정 생일 선물</p>
               <p>863개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/kCaBIPKYH3E/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzk5YWFhNDdhMGRkMDM2NmQ4YjYzOTE3MTY2MTgxNmNlLmdpZg" alt="">
-              <div>
+              <div class="price-information">
                 <span class="sale">7%</span>
-                <span class="handwriting">6,510</span>
+                <span class="sale-price">6,510</span>
               </div>
-              <p>에이블린</p>
-              <p class="information">[🔥최저가🔥패드내장 홀터넥 레이어드 나시] 옵텐홀터넥나시</p>
+              <p class="product__seller">에이블린</p>
+              <p class="product__name">[🔥최저가🔥패드내장 홀터넥 레이어드 나시] 옵텐홀터넥나시</p>
               <p>1,958개 구매중</p>
             </div>
           </div>
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/83xoU9A9An0/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzM5YWRmZmFjZTMxNzM2Y2FmNTgxYWQ4NTU4MDE1MGYwLmdpZg" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">27%</span>
-                <span class="handwriting">14,530</span>
+                <span class="sale-price">14,530</span>
               </div>
-              <p>크림슈가</p>
-              <p class="information">1+1할인[4계절용/핏보장] 찰랑 여리 단추 긴팔티셔츠</p>
+              <p class="product__seller">크림슈가</p>
+              <p class="product__name">1+1할인[4계절용/핏보장] 찰랑 여리 단추 긴팔티셔츠</p>
               <p>1,098개 구매중</p>
             </div>
           </div>
         </div>
-        <div class="product-lists">
+        <div class="product__lists">
           <div>
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/_0brQLlhgN0/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzLzE1NTIxNDJhYWFjYTg2YTI2YThhYjI1NjIxZDZmNWM3LmdpZg" alt="">
               <img src="https://d3ha2047wt6x28.cloudfront.net/2YRWYhwrEAs/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2UvcXVpY2tfbWVkaXVtXzE2NzU4MTgyMzM1MzA1MDMucG5n" alt="">   
-              <div>
+              <div class="price-information">
                 <span class="sale">20%</span>
-                <span class="handwriting">9,600</span>
+                <span class="sale-price">9,600</span>
               </div>
-              <p>홀리카홀리카</p>
-              <p class="information">[4개 구매시 멀티팔레트 케이스 증정] [1+1] 마이페이브 피스 섀도우 [NEW 컬러추가]</p>
+              <p class="product__seller">홀리카홀리카</p>
+              <p class="product__name">[4개 구매시 멀티팔레트 케이스 증정] [1+1] 마이페이브 피스 섀도우 [NEW 컬러추가]</p>
               <p>2,498개 구매중</p>
             </div>
           </div>
@@ -605,12 +605,12 @@
             <div class="item">
               <img src="https://d3ha2047wt6x28.cloudfront.net/7yn4E8g9tuU/pr:NEW_GOODS_THUMB_WEBP/czM6Ly9hYmx5LWltYWdlLWxlZ2FjeS9kYXRhL2dvb2RzL2U5OGQzNTFkM2UwNGI0ZjI1ZTlkYmMxNDg0MDgzMjJkLmdpZg" alt="">  
               <img src="https://d3ha2047wt6x28.cloudfront.net/M3_UZmOA9pc/pr:CONVERT_TO_WEBP/czM6Ly9pbWcuYS1ibHkuY29tL2RhdGEvZ29vZHMvYmFkZ2Uvc2hha19tZWRpdW1fMTY3NTgxODI4MzEyNzcwNy5wbmc" alt="">    
-              <div>
+              <div class="price-information">
                 <span class="sale">5%</span>
-                <span class="handwriting">17,500</span>
+                <span class="sale-price">17,500</span>
               </div>
-              <p>엔드모어</p>
-              <p class="information">[여리여리~/힙무드] 말라보이는, 배색 나그랑 레터링 옆셔링 크롭 반팔티셔츠 (6color)</p>
+              <p class="product__seller">엔드모어</p>
+              <p class="product__name">[여리여리~/힙무드] 말라보이는, 배색 나그랑 레터링 옆셔링 크롭 반팔티셔츠 (6color)</p>
               <p>11,388개 구매중</p>
             </div>
           </div>
@@ -619,19 +619,19 @@
     </div>
   </main>
   <footer>
-    <div class="home">
+    <div class="footer__menu">
       <div class="material-icons">home</div>
       <p>홈</p>
     </div>
-    <div class="All">
+    <div class="footer__menu">
       <div class="material-icons">menu</div>
       <p>전체보기</p>
     </div>
-    <div class="menu-search">
+    <div class="footer__menu">
       <div class="material-icons">search</div>
       <p>검색</p>
     </div>
-    <div class="Mypage">
+    <div class="footer__menu">
       <div class="material-icons">person</div>
       <p>마이페이지</p>
     </div>
